@@ -13,7 +13,7 @@ We are building a modern website for this church and planning a version 1.
 
 **Client:** React, Sass
 
-**Server:** Node, Express
+<!-- **Server:** Node, Express -->
 
 
 ## Installation
