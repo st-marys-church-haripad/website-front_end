@@ -1,0 +1,112 @@
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.vstack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Color */
+.text-green {
+    color: var(--common-color);
+}
+
+/* Font */
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fs-16 {
+    font-size: 1.3rem;
+}
+
+.fs-14 {
+    font-size: 1rem;
+}
+
+.content p {
+    margin-bottom: 0;
+}
+
+/* Button */
+.btn {
+    font-size: 1rem !important;
+    border: 1px solid var(--common-color);
+    padding: 10px 50px;
+}
+
+.btn:hover {
+    background-color: var(--common-color);
+    color: #111;
+}
+
+.btn-normal {
+    background-color: var(--main-bg);
+}
+
+.btn-transparent {
+    background-color: transparent;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--common-color);
+}
+
+.nav-link {
+    color: black;
+}
+
+.dropdown-div {
+    border: none;
+    z-index: 9999;
+}
+
+/* Animation */
+.fade-in {
+    position: absolute;
+    content: '';
+    top: 25%;
+    left: 50%;
+    color: #fff;
+    z-index: 999;
+    font-size: 2.5rem;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+/* Media Query */
+@media screen and (max-width: 480px) {
+    .fs-16 {
+        font-size: 1rem;
+    }
+
+    .fs-14 {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btn {
+        padding: 10px !important;
+    }
+}

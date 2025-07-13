@@ -1,0 +1,65 @@
+@import 'Utility.css';
+
+:root {
+    --main-bg : #f9f9f9;
+    --common-color : #88D44C;
+    --text-color : rgba(12, 21, 17, 0.9);
+    --overlay : rgba(0,0,0,0.5);
+    --border-color : rgba(255, 255, 255, 0.125);
+    --white : rgb(255,255,255);
+}
+
+/* Splash Screen */
+.splash-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.splash-image {
+    width: 110px; 
+    height: 115px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 3px 3px 1px #ccc;
+    -webkit-box-shadow: 3px 3px 1px #ccc;
+    -moz-box-shadow: 3px 3px 1px #ccc; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black; 
+}
+
+/* Not Found */
+.notFound-container {
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.notFound {
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+/* Banner Video */
+.video-img-container {
+    position: relative;
+}
+
+.video-img-container .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
