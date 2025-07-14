@@ -32,7 +32,7 @@ const About = () => {
         <div id="history" className='mt-3'>
           <h3 className='fs-16'>History</h3>
           <hr />
-          <p className='malayalam-font'>
+          <p className='malayalam-font fs-14'>
             A.D. 13-ാാാ നൂറ്റാണ്ടിൽ കാർത്തികപ്പള്ളി താലൂക്കിൽ
               ചിതരിപ്പർത്തിരുന്ന നസ്രാണി രമൂഹ ഹരിപ്പാട്ട് ഇപ്പ്പാൾ സരൻ്്് പ്
               താമസ് മിഷൻ് സരൻ്്റർ സ്ഥ ിതി സചയ്യുന്ന സ്ഥ ലത്ത് ഒരു പ് േവാലയസ്ഥ
