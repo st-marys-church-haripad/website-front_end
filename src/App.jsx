@@ -12,7 +12,7 @@ function App() {
     setLoader(true);
     const loaderTimeout = setTimeout(() => {
       setLoader(false);
-    }, 400);
+    }, 1000);
     return () => {
       clearTimeout(loaderTimeout);
     };
