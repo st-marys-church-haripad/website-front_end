@@ -3,11 +3,13 @@ import maryImg from '@/assets/images/mary.webp'
 import bgVideo from '@/assets/videos/home_video.mp4'
 import { bibleVerses } from "./doc/bibleVerses"
 import bgImg from '@/assets/images/home_img.webp'
+import no_image from '@/assets/images/noUser.png'
 
 export {
     logo,
     maryImg,
     bgVideo,
     bibleVerses,
-    bgImg
+    bgImg,
+    no_image
 }

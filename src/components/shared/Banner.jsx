@@ -40,6 +40,7 @@ const Banner = ({ location }) => {
                     transition: 'filter 0.6s ease',
                     overflow: 'hidden'
                 }}
+                poster={bgImg}
             />
             :
             path !== '/home' && <img 

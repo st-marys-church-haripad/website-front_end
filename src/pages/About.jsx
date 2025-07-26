@@ -1,6 +1,5 @@
-// import Footer from '@/components/shared/Footer';
-import NoData from '@/components/shared/NoData';
-import React from 'react'
+import { no_image } from '@/assets/asset';
+import React from 'react';
 
 const About = () => {
   const scheduleData = [
@@ -25,7 +24,102 @@ const About = () => {
       ]
     }
   ];
-
+  const parishAdministration = [
+    {
+      "name"    : 'Rev. Fr. K. P. Varghese',
+      "desig"   : 'Vicar',
+      "address" : '',
+      "number"  : '+91 9447719819'
+    },
+    {
+      "name"    : 'Sri. Jacob Samuel',
+      "desig"   : 'Trustee',
+      "address" : 'Kaleekaleth S J Villa',
+      "number"  : '+91 9446193920'
+    },
+    {
+      "name"    : 'Sri. Anil Chacko',
+      "desig"   : 'Secretary',
+      "address" : 'Mangattusheriyil',
+      "number"  : '+91 9496113187'
+    }
+  ]
+  const committee = [
+    {
+      "name"    : 'Sri. Yohannan Thomas',
+      "desig"   : '',
+      "address" : 'Bethel',
+      "number"  : ''
+    },
+    {
+      "name"    : 'Sri. C. T. Samuel',
+      "desig"   : '',
+      "address" : 'Kannileth',
+      "number"  : ''
+    },
+    {
+      "name"    : 'Sri. Philp Mathew',
+      "desig"   : '',
+      "address" : 'Vaazhayil',
+      "number"  : ''
+    },
+    {
+      "name"    : 'Sri. Georgekutty',
+      "desig"   : '',
+      "address" : 'Paadiparambil',
+      "number"  : ''
+    },
+    {
+      "name"    : 'Sri. Idiculla John',
+      "desig"   : '',
+      "address" : 'Mangattusheril Sukritham',
+      "number"  : ''
+    },
+    {
+      "name"    : 'Sri. Shiju Mathai',
+      "desig"   : '',
+      "address" : 'Kadavil',
+      "number"  : ''
+    },
+    {
+      "name"    : 'Smt. Molly Samuel',
+      "desig"   : '',
+      "address" : 'Vaaluzhuthil new villa',
+      "number"  : ''
+    },
+    {
+      "name"    : 'Smt. Selin Varghese',
+      "desig"   : '',
+      "address" : 'Kadavil aashirvaadh',
+      "number"  : ''
+    },
+    {
+      "name"    : 'Smt. Annie George',
+      "desig"   : '',
+      "address" : 'Alummootil padeetathil',
+      "number"  : ''
+    },
+    {
+      "name"    : 'Smt. Shanthamma Thomas',
+      "desig"   : '',
+      "address" : 'Manaveli madem',
+      "number"  : ''
+    },
+  ]
+  const auditors = [
+    {
+      "name"    : 'Sri. Jacob Alex',
+      "desig"   : '',
+      "address" : 'Naduvilethu',
+      "number"  : ''
+    },
+    {
+      "name"    : 'Sri. Sunny Abraham',
+      "desig"   : '',
+      "address" : 'Nelpura Kizhakkathil',
+      "number"  : ''
+    }
+  ]
   return (
     <>
       <div className='container'>
@@ -84,7 +178,67 @@ const About = () => {
         <div id="parish-administration" className='mt-5'>
           <h3 className='fs-16'>Parish administration</h3>
           <hr />
-          <NoData />
+          <div className="row gap-3 mb-3 justify-content-center">
+            {
+              parishAdministration.map((user, id)=>(
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
+                  <div className="card" style={{minHeight:'225px'}}>
+                    <div className="image-wrapper">
+                      <img src={no_image} className="card-img-top" />
+                    </div>
+                    <div className="card-body text-center">
+                      <h3 className='fs-14'>{user?.name}</h3>
+                      <p className='fs-14 mb-0'>{user?.desig}</p>
+                      <p className='fs-14 mb-0'>{user?.number}</p>
+                      <p className='fs-14 mb-0'>{user?.address}</p>
+                    </div>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+          <h3 className='fs-14 mt-2'>Committee</h3>
+          <hr />
+          <div className="row gap-3 mb-3 justify-content-center">
+            {
+              committee.map((user, id)=>(
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
+                  <div className="card" style={{minHeight:'225px'}}>
+                    <div className="image-wrapper">
+                      <img src={no_image} className="card-img-top" />
+                    </div>
+                    <div className="card-body text-center">
+                      <h3 className='fs-14'>{user?.name}</h3>
+                      <p className='fs-14 mb-0'>{user?.desig}</p>
+                      <p className='fs-14 mb-0'>{user?.number}</p>
+                      <p className='fs-14 mb-0'>{user?.address}</p>
+                    </div>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+          <h3 className='fs-14 mt-2'>Auditors</h3>
+          <hr />
+          <div className="row gap-3 mb-3 justify-content-center">
+            {
+              auditors.map((user, id)=>(
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
+                  <div className="card" style={{minHeight:'225px'}}>
+                    <div className="image-wrapper">
+                      <img src={no_image} className="card-img-top" />
+                    </div>
+                    <div className="card-body text-center">
+                      <h3 className='fs-14'>{user?.name}</h3>
+                      <p className='fs-14 mb-0'>{user?.desig}</p>
+                      <p className='fs-14 mb-0'>{user?.number}</p>
+                      <p className='fs-14 mb-0'>{user?.address}</p>
+                    </div>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
         </div>
       </div>
       {/* <Footer /> */}
