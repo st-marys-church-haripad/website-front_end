@@ -1,4 +1,4 @@
-import { no_image } from '@/assets/asset';
+import { amal, no_image, sunny_nelpurayil } from '@/assets/asset';
 import React from 'react'
 
 const SundaySchool = () => {
@@ -7,13 +7,15 @@ const SundaySchool = () => {
       "name"    : 'Sri. Sunny Abraham',
       "desig"   : 'HM',
       "address" : '',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": sunny_nelpurayil
     },
     {
       "name"    : 'Sri. Roby Thomas',
       "desig"   : 'District secretary',
       "address" : '',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": ''
     },
   ]
   const balasamajamData = [
@@ -21,13 +23,15 @@ const SundaySchool = () => {
       "name"    : 'Smt. Jessy Anil',
       "desig"   : 'Vice president',
       "address" : '',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": ''
     },
     {
       "name"    : 'Sri. Adam Baby John',
       "desig"   : 'Secretary',
       "address" : '',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": ''
     }
   ]
   return (
@@ -47,9 +51,16 @@ const SundaySchool = () => {
           {
             sundayData.map((user, id)=>(
               <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                <div className="card" style={{minHeight:'190px'}}>
+                <div className="card" style={{minHeight:'332px'}}>
                   <div className="image-wrapper">
-                    <img src={no_image} className="card-img-top" />
+                    <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
+                      transition: 'filter 0.6s ease',
+                      width: user?.prof_img == '' ? '' : '100%',
+                      height: user?.prof_img == '' ? '' : '100%',
+                      display: 'block',
+                      objectFit: 'cover',
+                      objectPosition: 'center 20%'
+                    }} />
                   </div>
                   <div className="card-body text-center">
                     <h3 className='fs-14'>{user?.name}</h3>
@@ -68,9 +79,16 @@ const SundaySchool = () => {
           {
             balasamajamData.map((user, id)=>(
               <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                <div className="card" style={{minHeight:'190px'}}>
+                <div className="card" style={{minHeight:'332px'}}>
                   <div className="image-wrapper">
-                    <img src={no_image} className="card-img-top" />
+                    <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
+                      transition: 'filter 0.6s ease',
+                      width: user?.prof_img == '' ? '' : '100%',
+                      height: user?.prof_img == '' ? '' : '100%',
+                      display: 'block',
+                      objectFit: 'cover',
+                      objectPosition: 'center 20%'
+                    }} />
                   </div>
                   <div className="card-body text-center">
                     <h3 className='fs-14'>{user?.name}</h3>
@@ -87,9 +105,16 @@ const SundaySchool = () => {
         <hr />
         <div className="row gap-3 mb-3 justify-content-center">
           <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div className="card" style={{minHeight:'190px'}}>
+            <div className="card" style={{minHeight:'332px'}}>
               <div className="image-wrapper">
-                <img src={no_image} className="card-img-top" />
+                <img src={amal} className="card-img-top" loading='lazy' style={{ 
+                  transition: 'filter 0.6s ease',
+                  width: '100%',
+                  height: '100%',
+                  display: 'block',
+                  objectFit: 'cover',
+                  objectPosition: 'center 20%'
+                }} />
               </div>
               <div className="card-body text-center">
                 <h3 className='fs-14'>Sri. Amal Jose Varghese</h3>

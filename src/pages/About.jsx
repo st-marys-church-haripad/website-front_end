@@ -1,4 +1,5 @@
-import { no_image } from '@/assets/asset';
+import { annie_varghese, c_t_samuel, gerogekutty_paadi, idicula, jacob_alex, no_image, santhama_thomas, selin, sunny_nelpurayil, sunny_vazhayil, yohannan } from '@/assets/asset';
+
 import React from 'react';
 
 const About = () => {
@@ -29,19 +30,22 @@ const About = () => {
       "name"    : 'Rev. Fr. K. P. Varghese',
       "desig"   : 'Vicar',
       "address" : '',
-      "number"  : '+91 9447719819'
+      "number"  : '+91 9447719819',
+      "prof_img": ''
     },
     {
       "name"    : 'Sri. Jacob Samuel',
       "desig"   : 'Trustee',
       "address" : 'Kaleekaleth S J Villa',
-      "number"  : '+91 9446193920'
+      "number"  : '+91 9446193920',
+      "prof_img": ''
     },
     {
       "name"    : 'Sri. Anil Chacko',
       "desig"   : 'Secretary',
       "address" : 'Mangattusheriyil',
-      "number"  : '+91 9496113187'
+      "number"  : '+91 9496113187',
+      "prof_img": ''
     }
   ]
   const committee = [
@@ -49,61 +53,71 @@ const About = () => {
       "name"    : 'Sri. Yohannan Thomas',
       "desig"   : '',
       "address" : 'Bethel',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": yohannan
     },
     {
       "name"    : 'Sri. C. T. Samuel',
       "desig"   : '',
       "address" : 'Kannileth',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": c_t_samuel
     },
     {
       "name"    : 'Sri. Philp Mathew',
       "desig"   : '',
       "address" : 'Vaazhayil',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": sunny_vazhayil
     },
     {
       "name"    : 'Sri. Georgekutty',
       "desig"   : '',
       "address" : 'Paadiparambil',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": gerogekutty_paadi
     },
     {
       "name"    : 'Sri. Idiculla John',
       "desig"   : '',
       "address" : 'Mangattusheril Sukritham',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": idicula
     },
     {
       "name"    : 'Sri. Shiju Mathai',
       "desig"   : '',
       "address" : 'Kadavil',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": ''
     },
     {
       "name"    : 'Smt. Molly Samuel',
       "desig"   : '',
       "address" : 'Vaaluzhuthil new villa',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": ''
     },
     {
       "name"    : 'Smt. Selin Varghese',
       "desig"   : '',
       "address" : 'Kadavil aashirvaadh',
-      "number"  : ''
+      "number"  : '',
+      'prof_img': selin
     },
     {
       "name"    : 'Smt. Annie Varghese',
       "desig"   : '',
       "address" : 'Alummootil padeetathil',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": annie_varghese
     },
     {
       "name"    : 'Smt. Shanthamma Thomas',
       "desig"   : '',
       "address" : 'Manaveli madem',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": santhama_thomas
     },
   ]
   const auditors = [
@@ -111,13 +125,15 @@ const About = () => {
       "name"    : 'Sri. Jacob Alex',
       "desig"   : '',
       "address" : 'Naduvilethu',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": jacob_alex
     },
     {
       "name"    : 'Sri. Sunny Abraham',
       "desig"   : '',
       "address" : 'Nelpura Kizhakkathil',
-      "number"  : ''
+      "number"  : '',
+      "prof_img": sunny_nelpurayil
     }
   ]
   return (
@@ -211,9 +227,16 @@ const About = () => {
             {
               parishAdministration.map((user, id)=>(
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                  <div className="card" style={{minHeight:'225px'}}>
+                  <div className="card" style={{minHeight:'332px'}}>
                     <div className="image-wrapper">
-                      <img src={no_image} className="card-img-top" />
+                      <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
+                        transition: 'filter 0.6s ease',
+                        width: user?.prof_img == '' ? '' : '100%',
+                        height: user?.prof_img == '' ? '' : '100%',
+                        display: 'block',
+                        objectFit: 'cover',
+                        objectPosition: 'center 20%'
+                      }} />
                     </div>
                     <div className="card-body text-center">
                       <h3 className='fs-14'>{user?.name}</h3>
@@ -232,9 +255,16 @@ const About = () => {
             {
               committee.map((user, id)=>(
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                  <div className="card" style={{minHeight:'225px'}}>
+                  <div className="card" style={{minHeight:'332px'}}>
                     <div className="image-wrapper">
-                      <img src={no_image} className="card-img-top" />
+                      <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
+                        transition: 'filter 0.6s ease',
+                        width: user?.prof_img == '' ? '' : '100%',
+                        height: user?.prof_img == '' ? '' : '100%',
+                        display: 'block',
+                        objectFit: 'cover',
+                        objectPosition: 'center 20%'
+                      }} />
                     </div>
                     <div className="card-body text-center">
                       <h3 className='fs-14'>{user?.name}</h3>
@@ -253,9 +283,16 @@ const About = () => {
             {
               auditors.map((user, id)=>(
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                  <div className="card" style={{minHeight:'225px'}}>
+                  <div className="card" style={{minHeight:'332px'}}>
                     <div className="image-wrapper">
-                      <img src={no_image} className="card-img-top" />
+                      <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
+                        transition: 'filter 0.6s ease',
+                        width: user?.prof_img == '' ? '' : '100%',
+                        height: user?.prof_img == '' ? '' : '100%',
+                        display: 'block',
+                        objectFit: 'cover',
+                        objectPosition: 'center 20%'
+                      }} />
                     </div>
                     <div className="card-body text-center">
                       <h3 className='fs-14'>{user?.name}</h3>
@@ -272,7 +309,7 @@ const About = () => {
           <hr />
           <div className="row gap-3 mb-3 justify-content-center">
             <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-              <div className="card" style={{minHeight:'190px'}}>
+              <div className="card" style={{minHeight:'332px'}}>
                 <div className="image-wrapper">
                   <img src={no_image} className="card-img-top" />
                 </div>
