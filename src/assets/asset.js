@@ -4,6 +4,7 @@ import bgVideo from '@/assets/videos/home_video.mp4'
 import { bibleVerses } from "./doc/bibleVerses"
 import bgImg from '@/assets/images/home_img.webp'
 import no_image from '@/assets/images/noUser.png'
+import notice from '@/assets/images/notice.webp'
 
 export {
     logo,
@@ -11,5 +12,6 @@ export {
     bgVideo,
     bibleVerses,
     bgImg,
-    no_image
+    no_image,
+    notice
 }

@@ -12,9 +12,9 @@ const Samajam = () => {
             </p>
         </div>
         <div id="school-administration" className="mt-5">
-            <h3 className="fs-16">samajem administration</h3>
-            <hr />
-            <div className="row gap-3 mb-3 justify-content-center">
+          <h3 className="fs-16">samajem administration</h3>
+          <hr />
+          <div className="row gap-3 mb-3 justify-content-center">
             <div className="col-12 col-sm-6 col-md-4 col-lg-3">
               <div className="card" style={{minHeight:'190px'}}>
                 <div className="image-wrapper">
