@@ -16,6 +16,7 @@ import sunny_vazhayil from '@/assets/members_images/sunny_vazhayil.webp'
 import idicula from '@/assets/members_images/idicula.webp'
 import selin from '@/assets/members_images/selin.webp'
 import yohannan from '@/assets/members_images/yohannan.webp'
+import molly_samuel from '@/assets/members_images/molly_samuel.webp'
 
 export {
     logo,
@@ -35,5 +36,6 @@ export {
     sunny_vazhayil,
     idicula,
     selin,
-    yohannan
+    yohannan,
+    molly_samuel
 }

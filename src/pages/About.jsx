@@ -1,4 +1,4 @@
-import { annie_varghese, c_t_samuel, gerogekutty_paadi, idicula, jacob_alex, no_image, santhama_thomas, selin, sunny_nelpurayil, sunny_vazhayil, yohannan } from '@/assets/asset';
+import { annie_varghese, c_t_samuel, gerogekutty_paadi, idicula, jacob_alex, molly_samuel, no_image, santhama_thomas, selin, sunny_nelpurayil, sunny_vazhayil, yohannan } from '@/assets/asset';
 
 import React from 'react';
 
@@ -96,7 +96,7 @@ const About = () => {
       "desig"   : '',
       "address" : 'Vaaluzhuthil new villa',
       "number"  : '',
-      "prof_img": ''
+      "prof_img": molly_samuel
     },
     {
       "name"    : 'Smt. Selin Varghese',
