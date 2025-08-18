@@ -17,6 +17,9 @@ import idicula from '@/assets/members_images/idicula.webp'
 import selin from '@/assets/members_images/selin.webp'
 import yohannan from '@/assets/members_images/yohannan.webp'
 import molly_samuel from '@/assets/members_images/molly_samuel.webp'
+import jissy_anil from '@/assets/members_images/jissy_anil.webp'
+import adam from '@/assets/members_images/adam.webp'
+import roby from '@/assets/members_images/roby.webp'
 
 export {
     logo,
@@ -37,5 +40,8 @@ export {
     idicula,
     selin,
     yohannan,
-    molly_samuel
+    molly_samuel,
+    jissy_anil,
+    adam,
+    roby
 }

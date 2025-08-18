@@ -1,4 +1,4 @@
-import { no_image } from '@/assets/asset';
+import { no_image, roby } from '@/assets/asset';
 import React from 'react'
 
 const Youth = () => {
@@ -57,7 +57,7 @@ const Youth = () => {
       "name"    : 'Sri. Roby Thomas',
       "desig"   : '',
       "address" : '',
-      "number"  : ''
+      "number"  : roby
     },
     {
       "name"    : 'Smt. Jisha George',

@@ -1,4 +1,4 @@
-import { amal, no_image, sunny_nelpurayil } from '@/assets/asset';
+import { adam, amal, jissy_anil, no_image, roby, sunny_nelpurayil } from '@/assets/asset';
 import React from 'react'
 
 const SundaySchool = () => {
@@ -15,24 +15,40 @@ const SundaySchool = () => {
       "desig"   : 'District secretary',
       "address" : '',
       "number"  : '',
-      "prof_img": ''
+      "prof_img": roby
     },
   ]
   const balasamajamData = [
     {
-      "name"    : 'Smt. Jessy Anil',
+      "name"    : 'Smt. Jissy Anil',
       "desig"   : 'Vice president',
       "address" : '',
       "number"  : '',
-      "prof_img": ''
+      "prof_img": jissy_anil
     },
     {
       "name"    : 'Sri. Adam Baby John',
       "desig"   : 'Secretary',
       "address" : '',
       "number"  : '',
-      "prof_img": ''
+      "prof_img": adam
     }
+  ]
+  const mgocsmData = [
+    {
+      "name"    : 'Sri. Amal Jose Varghese',
+      "desig"   : 'Secretary',
+      "address" : '',
+      "number"  : '',
+      "prof_img": amal
+    },
+    {
+      "name"    : 'Kum. Eve Anna Anil',
+      "desig"   : 'Joint Secretary',
+      "address" : '',
+      "number"  : '',
+      "prof_img": ''
+    },
   ]
   return (
     <div className='container'>
@@ -104,26 +120,30 @@ const SundaySchool = () => {
         <h3 className="fs-14 mt-2">MGOCSM</h3>
         <hr />
         <div className="row gap-3 mb-3 justify-content-center">
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div className="card" style={{minHeight:'332px'}}>
-              <div className="image-wrapper">
-                <img src={amal} className="card-img-top" loading='lazy' style={{ 
-                  transition: 'filter 0.6s ease',
-                  width: '100%',
-                  height: '100%',
-                  display: 'block',
-                  objectFit: 'cover',
-                  objectPosition: 'center 20%'
-                }} />
+          {
+            mgocsmData.map((user, id)=>(
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
+                <div className="card" style={{minHeight:'332px'}}>
+                  <div className="image-wrapper">
+                    <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
+                      transition: 'filter 0.6s ease',
+                      width: user?.prof_img == '' ? '' : '100%',
+                      height: user?.prof_img == '' ? '' : '100%',
+                      display: 'block',
+                      objectFit: 'cover',
+                      objectPosition: 'center 20%'
+                    }} />
+                  </div>
+                  <div className="card-body text-center">
+                    <h3 className='fs-14'>{user?.name}</h3>
+                    <p className='fs-14 mb-0'>{user?.desig}</p>
+                    <p className='fs-14 mb-0'>{user?.number}</p>
+                    <p className='fs-14 mb-0'>{user?.address}</p>
+                  </div>
+                </div>
               </div>
-              <div className="card-body text-center">
-                <h3 className='fs-14'>Sri. Amal Jose Varghese</h3>
-                <p className='fs-14 mb-0'>Secretary</p>
-                <p className='fs-14 mb-0'></p>
-                <p className='fs-14 mb-0'></p>
-              </div>
-            </div>
-          </div>
+            ))
+          }
         </div>
       </div>
     </div>
