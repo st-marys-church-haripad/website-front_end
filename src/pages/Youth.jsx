@@ -57,7 +57,8 @@ const Youth = () => {
       "name"    : 'Sri. Roby Thomas',
       "desig"   : '',
       "address" : '',
-      "number"  : roby
+      "number"  : '',
+      "prof_img": roby
     },
     {
       "name"    : 'Smt. Jisha George',
