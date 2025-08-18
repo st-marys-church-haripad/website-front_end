@@ -4,6 +4,13 @@ import React from 'react'
 const SundaySchool = () => {
   const sundayData = [
     {
+      "name"    : 'Sri. Roby Thomas',
+      "desig"   : 'Karthikapally district secretary',
+      "address" : '',
+      "number"  : '',
+      "prof_img": roby
+    },
+    {
       "name"    : 'Sri. Sunny Abraham',
       "desig"   : 'HM',
       "address" : '',
@@ -11,11 +18,11 @@ const SundaySchool = () => {
       "prof_img": sunny_nelpurayil
     },
     {
-      "name"    : 'Sri. Roby Thomas',
-      "desig"   : 'Karthikapally district secretary',
+      "name"    : 'Smt. Ancy Satheesh',
+      "desig"   : 'Secretary',
       "address" : '',
       "number"  : '',
-      "prof_img": roby
+      "prof_img": ''
     },
   ]
   const balasamajamData = [
