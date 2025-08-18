@@ -1,4 +1,4 @@
-import { adam, amal, jissy_anil, no_image, roby, sunny_nelpurayil } from '@/assets/asset';
+import { adam, amal, eve_anna, jissy_anil, no_image, roby, sunny_nelpurayil } from '@/assets/asset';
 import React from 'react'
 
 const SundaySchool = () => {
@@ -12,7 +12,7 @@ const SundaySchool = () => {
     },
     {
       "name"    : 'Sri. Roby Thomas',
-      "desig"   : 'District secretary',
+      "desig"   : 'Karthikapally district secretary',
       "address" : '',
       "number"  : '',
       "prof_img": roby
@@ -44,10 +44,10 @@ const SundaySchool = () => {
     },
     {
       "name"    : 'Kum. Eve Anna Anil',
-      "desig"   : 'Joint Secretary',
+      "desig"   : 'Joint secretary',
       "address" : '',
       "number"  : '',
-      "prof_img": ''
+      "prof_img": eve_anna
     },
   ]
   return (

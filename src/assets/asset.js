@@ -20,6 +20,7 @@ import molly_samuel from '@/assets/members_images/molly_samuel.webp'
 import jissy_anil from '@/assets/members_images/jissy_anil.webp'
 import adam from '@/assets/members_images/adam.webp'
 import roby from '@/assets/members_images/roby.webp'
+import eve_anna from '@/assets/members_images/eve_anna.webp'
 
 export {
     logo,
@@ -43,5 +44,6 @@ export {
     molly_samuel,
     jissy_anil,
     adam,
-    roby
+    roby,
+    eve_anna
 }
