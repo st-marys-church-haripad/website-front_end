@@ -1,4 +1,4 @@
-import { no_image, roby } from '@/assets/asset';
+import { ancy_satheesh, no_image, roby } from '@/assets/asset';
 import React from 'react'
 
 const Youth = () => {
@@ -15,7 +15,7 @@ const Youth = () => {
       "desig"   : 'Vice president',
       "address" : '',
       "number"  : '',
-      "prof_img": ''
+      "prof_img": ancy_satheesh
     },
     {
       "name"    : 'Sri. Shibin S',
