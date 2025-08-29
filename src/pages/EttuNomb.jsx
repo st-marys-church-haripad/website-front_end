@@ -6,7 +6,7 @@ const EttuNomb = () => {
   return (
     <div className='container mt-5'>
         <div id="notice" className='mt-3'>
-          <h3 className='fs-16'>About perunnal</h3>
+          <h3 className='fs-16'>About <span className="malayalam-font fs-16">പെരുന്നാൾ</span></h3>
           <hr />
           <p className='malayalam-font fs-14' style={{
             'textIndent': '150px',

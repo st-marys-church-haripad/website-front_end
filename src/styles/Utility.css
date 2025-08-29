@@ -74,6 +74,13 @@ img {
     z-index: 9999;
 }
 
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+  background-color: var(--common-color) !important;
+  color: var(--white) !important; 
+}
+
+
 /* Animation */
 .fade-in {
     position: absolute;
