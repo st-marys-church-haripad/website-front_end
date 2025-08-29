@@ -2,6 +2,7 @@ import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import EttuNomb from "@/pages/EttuNomb";
 import Home from "@/pages/Home";
+import Live from "@/pages/Live";
 import Samajam from "@/pages/Samajam";
 import SundaySchool from "@/pages/SundaySchool";
 import Youth from "@/pages/Youth";
@@ -48,11 +49,11 @@ export const menuItems = [
     //   url : '/news-events',
     //   element : <News />
     // },
-    // {
-    //   title : 'Live Streams',
-    //   url : '/live-streams',
-    //   element : <Live />
-    // },
+    {
+      title : 'Live Streams',
+      url : '/live-streams',
+      element : Live
+    },
     {
       title : `എട്ടുനോമ്പ് ${date.getFullYear()}`,
       url : `/എട്ടുനോമ്പ്-${date.getFullYear()}`,
