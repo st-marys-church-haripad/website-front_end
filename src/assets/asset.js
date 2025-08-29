@@ -23,13 +23,9 @@ import roby from '@/assets/members_images/roby.webp'
 import eve_anna from '@/assets/members_images/eve_anna.webp'
 import suja_paadiparambi from '@/assets/members_images/suja_paadiparambi.webp'
 import ancy_satheesh from '@/assets/members_images/ancy_satheesh.webp'
-import poster_img_1 from '@/assets/ettuNomb/poster_img_1.webp'
-import poster_img_2 from '@/assets/ettuNomb/poster_img_2.webp'
-import poster_img_3 from '@/assets/ettuNomb/poster_img_3.webp'
-import poster_img_4 from '@/assets/ettuNomb/poster_img_4.webp'
-import poster_img_5 from '@/assets/ettuNomb/poster_img_5.webp'
-import poster_img_6 from '@/assets/ettuNomb/poster_img_6.webp'
-
+import poster_main_1 from '@/assets/ettuNomb/poster_main_1.webp'
+import poster_main_2 from '@/assets/ettuNomb/poster_main_2.webp'
+import kodimarem_next from '@/assets/ettuNomb/kodimarem_next.webp'
 
 export {
     logo,
@@ -57,10 +53,7 @@ export {
     eve_anna,
     suja_paadiparambi,
     ancy_satheesh,
-    poster_img_1,
-    poster_img_2,
-    poster_img_3,
-    poster_img_4,
-    poster_img_5,
-    poster_img_6
+    poster_main_1,
+    poster_main_2,
+    kodimarem_next
 }

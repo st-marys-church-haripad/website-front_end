@@ -1,6 +1,5 @@
-import { notice, poster_img_1, poster_img_2, poster_img_3, poster_img_4, poster_img_5 } from "@/assets/asset";
+import { kodimarem_next, notice, poster_main_1, poster_main_2 } from "@/assets/asset";
 import { useState } from "react";
-import HTMLFlipBook from "react-pageflip";
 
 const EttuNomb = () => {
   const [imgLoaded, setImgLoaded] = useState(false);
@@ -32,7 +31,7 @@ const EttuNomb = () => {
           </p>
           <div className="vstack mb-3 gap-2">
             <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#poster">
-              First poster <i className="fa-solid fa-arrow-up-right-from-square"></i>
+              Poster <i className="fa-solid fa-arrow-up-right-from-square"></i>
             </button>
             <div className="modal fade" id="poster" tabIndex="-1" aria-labelledby="posterLabel" aria-hidden="true">
               <div className="modal-dialog">
@@ -57,102 +56,89 @@ const EttuNomb = () => {
                 </div>
               </div>
             </div>
-            {/* <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#detailedNotice">
-              Detailed view <i className="fa-solid fa-arrow-up-right-from-square"></i>
-            </button> */}
-            <div className="modal fade" id="detailedNotice" tabIndex="-1" aria-labelledby="detailedNoticeLabel" aria-hidden="true">
+            <div className="d-flex gap-2">
+              <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#noticeFirst">
+                Notice 1st part <i className="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+              <div className="modal fade" id="noticeFirst" tabIndex="-1" aria-labelledby="posterLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div className="modal-body">
+                      <img src={ poster_main_1 } 
+                        className="img-fluid"
+                        onLoad={() => setImgLoaded(true)}
+                        style={{ 
+                          filter: imgLoaded ? 'blur(0px)' : 'blur(8px)',
+                          transition: 'filter 0.6s ease',
+                          width: '100%',
+                          height: '100%',
+                          display: 'block',
+                          objectFit: 'cover'
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#noticeSecond">
+                Notice 2st part <i className="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+              <div className="modal fade" id="noticeSecond" tabIndex="-1" aria-labelledby="posterLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div className="modal-body">
+                      <img src={ poster_main_2 } 
+                        className="img-fluid"
+                        onLoad={() => setImgLoaded(true)}
+                        style={{ 
+                          filter: imgLoaded ? 'blur(0px)' : 'blur(8px)',
+                          transition: 'filter 0.6s ease',
+                          width: '100%',
+                          height: '100%',
+                          display: 'block',
+                          objectFit: 'cover'
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dates" className="my-3">
+          <h3 className="fs-16">Important dates</h3>
+          <hr />
+          <div className="d-flex justify-content-between align-items-center">
+            <span className="malayalam-font fs-14">31st August 2025 - കൊടിമരഘോഷയാത്ര</span>
+            <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#kodiyet">
+              Poster <i className="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+            <div className="modal fade" id="kodiyet" tabIndex="-1" aria-labelledby="posterLabel" aria-hidden="true">
               <div className="modal-dialog">
                 <div className="modal-content">
                   <div className="modal-header">
                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div className="modal-body">
-                    <HTMLFlipBook width={300} height={500}>
-                      <div className="demoPage">
-                        <img src={ poster_img_1 } 
-                          className="img-fluid"
-                          onLoad={() => setImgLoaded(true)}
-                          style={{ 
-                            filter: imgLoaded ? 'blur(0px)' : 'blur(8px)',
-                            transition: 'filter 0.6s ease',
-                            width: '100%',
-                            height: '100%',
-                            display: 'block',
-                            objectFit: 'cover'
-                          }}
-                        />
-                      </div>
-                      <div className="demoPage">
-                        <img src={ poster_img_2 } 
-                          className="img-fluid"
-                          onLoad={() => setImgLoaded(true)}
-                          style={{ 
-                            filter: imgLoaded ? 'blur(0px)' : 'blur(8px)',
-                            transition: 'filter 0.6s ease',
-                            width: '100%',
-                            height: '100%',
-                            display: 'block',
-                            objectFit: 'cover'
-                          }}
-                        />
-                      </div>
-                      <div className="demoPage">
-                        <img src={ poster_img_3 } 
-                          className="img-fluid"
-                          onLoad={() => setImgLoaded(true)}
-                          style={{ 
-                            filter: imgLoaded ? 'blur(0px)' : 'blur(8px)',
-                            transition: 'filter 0.6s ease',
-                            width: '100%',
-                            height: '100%',
-                            display: 'block',
-                            objectFit: 'cover'
-                          }}
-                        />
-                      </div>
-                      <div className="demoPage">
-                        <img src={ poster_img_4 } 
-                          className="img-fluid"
-                          onLoad={() => setImgLoaded(true)}
-                          style={{ 
-                            filter: imgLoaded ? 'blur(0px)' : 'blur(8px)',
-                            transition: 'filter 0.6s ease',
-                            width: '100%',
-                            height: '100%',
-                            display: 'block',
-                            objectFit: 'cover'
-                          }}
-                        />
-                      </div>
-                                            <div className="demoPage">
-                        <img src={ poster_img_4 } 
-                          className="img-fluid"
-                          onLoad={() => setImgLoaded(true)}
-                          style={{ 
-                            filter: imgLoaded ? 'blur(0px)' : 'blur(8px)',
-                            transition: 'filter 0.6s ease',
-                            width: '100%',
-                            height: '100%',
-                            display: 'block',
-                            objectFit: 'cover'
-                          }}
-                        />
-                      </div>
-                      <div className="demoPage">
-                        <img src={ poster_img_5 } 
-                          className="img-fluid"
-                          onLoad={() => setImgLoaded(true)}
-                          style={{ 
-                            filter: imgLoaded ? 'blur(0px)' : 'blur(8px)',
-                            transition: 'filter 0.6s ease',
-                            width: '100%',
-                            height: '100%',
-                            display: 'block',
-                            objectFit: 'cover'
-                          }}
-                        />
-                      </div>
-                    </HTMLFlipBook>
+                    <img src={ kodimarem_next } 
+                      className="img-fluid"
+                      onLoad={() => setImgLoaded(true)}
+                      style={{ 
+                        filter: imgLoaded ? 'blur(0px)' : 'blur(8px)',
+                        transition: 'filter 0.6s ease',
+                        width: '100%',
+                        height: '100%',
+                        display: 'block',
+                        objectFit: 'cover'
+                      }}
+                    />
                   </div>
                 </div>
               </div>
