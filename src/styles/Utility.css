@@ -77,7 +77,7 @@ img {
 .dropdown-menu .dropdown-item.active,
 .dropdown-menu .dropdown-item:active {
   background-color: var(--common-color) !important;
-  color: var(--white) !important; 
+  color: var(--text-color) !important; 
 }
 
 
