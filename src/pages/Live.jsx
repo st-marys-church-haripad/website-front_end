@@ -10,7 +10,7 @@ const Live = () => {
         <p className='fs-14'>
           Chief Celebrant : <b className='malayalam-font'>അഭി.ഡോ. എബ്രഹാം മാർ സെറാഫിം</b>
           <br />
-          Live from : <b>7:30 am</b>
+          Live from : 7:30 am
         </p>
       </div>
       <div className='mb-2'>
