@@ -2,20 +2,49 @@ import React from 'react'
 import ReactPlayer from 'react-player';
 
 const Live = () => {
+  // const liveData = [
+  //   {
+  //     "name" : 'അഭി. ഡോ. യൂഹാനോൻ മാർ ദിമെത്രിയോസ്',
+  //     "date" : 'Day 1',
+  //     "url"  : 'https://www.youtube.com/live/sJCJ1nWynA8?si=PrjM7YWcaEQ42IRu'
+  //   },
+  //   {
+  //     "name" : 'അഭി.ഡോ. എബ്രഹാം മാർ സെറാഫിം',
+  //     "date" : 'Day 2',
+  //     "url"  : 'https://www.youtube.com/live/YFXaMxYhEIE?si=Z7msl0MJZGSadBLA'
+  //   }
+  // ]
   return (
     <div className='container'>
-      <div id="day_1" className='mt-3'>
-        <h3 className='fs-16'>Day 2 - 2nd September 2025</h3>
+      <div id="day_1" className='my-3'>
+        <h3 className='fs-16'>Day 3 - 3rd September 2025</h3>
         <hr />
         <p className='fs-14'>
-          Chief Celebrant : <b className='malayalam-font'>അഭി.ഡോ. എബ്രഹാം മാർ സെറാഫിം</b>
+          Chief celebrant : <b className='malayalam-font'>അഭി.ഡോ.ജോസഫ് മാർ ദീവന്നാസിയോസ്</b>
           <br />
           Live from : 7:30 am
         </p>
       </div>
       <div className='mb-2'>
-        <ReactPlayer src="https://www.youtube.com/live/YFXaMxYhEIE?si=tjgU2UeNxFBqOFSK" width={'100%'} height={'100%'} autoPlay controls></ReactPlayer>
+        <ReactPlayer src="https://www.youtube.com/live/duJE-QjpMDc?si=O6JK-DUVAzKVAS7B" width={'100%'} height={'350px'} autoPlay controls></ReactPlayer>
       </div>
+      {/* <div className="row gap-3 mb-3 justify-content-center">
+        {
+          liveData.map((user, id)=>(
+            <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
+              <div className="card" style={{minHeight:'350px'}}>
+                <div className="image-wrapper">
+                  <ReactPlayer src={user?.url} width={'100%'} height={'auto'} controls></ReactPlayer>
+                </div>
+                <div className="card-body text-center">
+                  <p className='fs-14'>{user?.date}</p>
+                  <h3 className='fs-14'>Chief celebrant: <span className="malayalam-font">{user?.name}</span></h3>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div> */}
     </div>
   )
 }
