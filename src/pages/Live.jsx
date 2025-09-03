@@ -13,20 +13,30 @@ const Live = () => {
   //     "date" : 'Day 2',
   //     "url"  : 'https://www.youtube.com/live/YFXaMxYhEIE?si=Z7msl0MJZGSadBLA'
   //   }
+    // {
+    //   "name" : 'അഭി.ഡോ.ജോസഫ് മാർ ദീവന്നാസിയോസ്',
+    //   "date" : 'Day 3',
+    //   "url"  : 'https://www.youtube.com/live/duJE-QjpMDc?si=O6JK-DUVAzKVAS7B'
+    // },
+    // {
+    //   "name" : 'അഭി. എബ്രഹാം മാർ എപ്പിഫാനിയോസ്',
+    //   "date" : 'Day 4',
+    //   "url"  : 'https://www.youtube.com/live/Amhl09sE_K8?si=xTsc1lGGIjVy_ncr'
+    // }
   // ]
   return (
     <div className='container'>
       <div id="day_1" className='my-3'>
-        <h3 className='fs-16'>Day 3 - 3rd September 2025</h3>
+        <h3 className='fs-16'>Day 4 - 4th September 2025</h3>
         <hr />
         <p className='fs-14'>
-          Chief celebrant : <b className='malayalam-font'>അഭി.ഡോ.ജോസഫ് മാർ ദീവന്നാസിയോസ്</b>
+          Chief celebrant : <b className='malayalam-font'>അഭി. എബ്രഹാം മാർ എപ്പിഫാനിയോസ്</b>
           <br />
           Live from : 7:30 am
         </p>
       </div>
       <div className='mb-2'>
-        <ReactPlayer src="https://www.youtube.com/live/duJE-QjpMDc?si=O6JK-DUVAzKVAS7B" width={'100%'} height={'350px'} autoPlay controls></ReactPlayer>
+        <ReactPlayer src="https://www.youtube.com/live/Amhl09sE_K8?si=xTsc1lGGIjVy_ncr" width={'100%'} height={'350px'} autoPlay controls></ReactPlayer>
       </div>
       {/* <div className="row gap-3 mb-3 justify-content-center">
         {
