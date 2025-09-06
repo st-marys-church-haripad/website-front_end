@@ -27,21 +27,26 @@ const Live = () => {
     //   "name" : 'ഡോ. തോമസ് മാർ അത്താനാസിയോസ്',
     //   "date" : 'Day 5',
     //   "url"  : 'https://www.youtube.com/live/lPpWXnhksxk?si=SaBpeI2o2o8ZAyCL'
+    // },
+    // {
+    //   "name" : 'പരി. കാതോലിക്കാ ബാവ',
+    //   "date" : 'Day 6',
+    //   "url"  : 'https://www.youtube.com/live/qi-4AzBlbEM?si=VhwmSPm6xhZarnkC'
     // }
   // ]
   return (
     <div className='container'>
       <div id="day_1" className='my-3'>
-        <h3 className='fs-16'>Day 5 - 5th September 2025</h3>
+        <h3 className='fs-16'>Day 6 - 6th September 2025</h3>
         <hr />
         <p className='fs-14'>
-          Chief celebrant : <b className='malayalam-font'>ഡോ. തോമസ് മാർ അത്താനാസിയോസ്</b>
+          Chief celebrant : <b className='malayalam-font'>പരി. കാതോലിക്കാ ബാവ</b>
           <br />
           Live from : 7:30 am
         </p>
       </div>
       <div className='mb-2'>
-        <ReactPlayer src="https://www.youtube.com/live/lPpWXnhksxk?si=SaBpeI2o2o8ZAyCL" width={'100%'} height={'350px'} autoPlay controls></ReactPlayer>
+        <ReactPlayer src="https://www.youtube.com/live/qi-4AzBlbEM?si=VhwmSPm6xhZarnkC" width={'100%'} height={'350px'} autoPlay controls></ReactPlayer>
       </div>
       {/* <div className="row gap-3 mb-3 justify-content-center">
         {
