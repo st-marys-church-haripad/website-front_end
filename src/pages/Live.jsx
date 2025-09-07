@@ -34,15 +34,33 @@ const Live = () => {
     //   "url"  : 'https://www.youtube.com/live/qi-4AzBlbEM?si=VhwmSPm6xhZarnkC'
     // },
     // {
-    //   "name" : 'അഭി.ഡോ.യാക്കോബ് മാർ ഐറേനിയസ്',
+    //   "name" : 'അഭി.അലക്സിയോസ് മാർ യൗസേബിയോസ്',
     //   "date" : 'Day 7',
     //   "url"  : 'https://www.youtube.com/live/P0Ceuw4DsEU?si=dvTNgex2ZVt2mc87'
+    // },
+    // {
+    //   "name" : 'അഭി.ഡോ.യാക്കോബ് മാർ ഐറേനിയസ്',
+    //   "date" : 'Day 8',
+    //   "url"  : 'https://www.youtube.com/live/P0Ceuw4DsEU?si=yPpM2ULbLPqLcfOR'
     // }
   // ]
   return (
     <div className='container'>
-      <div id="day_1" className='my-3'>
+      <div id="day_7" className='my-3'>
         <h3 className='fs-16'>Day 7 - 7th September 2025</h3>
+        <hr />
+        <p className='fs-14'>
+          സന്ധ്യാ നമസ്കാരം , റാസ
+          <br />
+          Live from : 5:00 pm
+        </p>
+      </div>
+      <div className='mb-2'>
+        <ReactPlayer src="https://www.youtube.com/live/gV3ahWQ0XSk?si=xDebRh0SiEoVY8v6" width={'100%'} height={'350px'} autoPlay controls></ReactPlayer>
+      </div>
+      <hr />
+      <div id="day_1" className='my-3'>
+        <h3 className='fs-16'>Day 8 - 8th September 2025</h3>
         <hr />
         <p className='fs-14'>
           Chief celebrant : <b className='malayalam-font'>അഭി.ഡോ.യാക്കോബ് മാർ ഐറേനിയസ്</b>
@@ -51,7 +69,7 @@ const Live = () => {
         </p>
       </div>
       <div className='mb-2'>
-        <ReactPlayer src="https://www.youtube.com/live/P0Ceuw4DsEU?si=dvTNgex2ZVt2mc87" width={'100%'} height={'350px'} autoPlay controls></ReactPlayer>
+        <ReactPlayer src="https://www.youtube.com/live/P0Ceuw4DsEU?si=yPpM2ULbLPqLcfOR" width={'100%'} height={'350px'} controls></ReactPlayer>
       </div>
       {/* <div className="row gap-3 mb-3 justify-content-center">
         {
