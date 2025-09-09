@@ -74,16 +74,16 @@ const SundaySchool = () => {
           {
             sundayData.map((user, id)=>(
               <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                <div className="card" style={{minHeight:'332px'}}>
+                <div className="card">
                   <div className="image-wrapper">
                     <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
-                      transition: 'filter 0.6s ease',
-                      width: user?.prof_img == '' ? '' : '100%',
-                      height: user?.prof_img == '' ? '' : '100%',
-                      display: 'block',
-                      objectFit: 'cover',
-                      objectPosition: 'center 20%'
-                    }} />
+                        transition: 'filter 0.6s ease',
+                        display: 'block',
+                        width: user?.prof_img === '' ? '40%' : '100%',
+                        height: user?.prof_img === '' ? '40%' : '100%',
+                        objectFit: user?.prof_img === '' ? 'contain' : 'cover',
+                        objectPosition: 'center top',
+                      }} />
                   </div>
                   <div className="card-body text-center">
                     <h3 className='fs-14'>{user?.name}</h3>
@@ -102,16 +102,16 @@ const SundaySchool = () => {
           {
             balasamajamData.map((user, id)=>(
               <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                <div className="card" style={{minHeight:'332px'}}>
+                <div className="card">
                   <div className="image-wrapper">
                     <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
-                      transition: 'filter 0.6s ease',
-                      width: user?.prof_img == '' ? '' : '100%',
-                      height: user?.prof_img == '' ? '' : '100%',
-                      display: 'block',
-                      objectFit: 'cover',
-                      objectPosition: 'center 20%'
-                    }} />
+                        transition: 'filter 0.6s ease',
+                        display: 'block',
+                        width: user?.prof_img === '' ? '40%' : '100%',
+                        height: user?.prof_img === '' ? '40%' : '100%',
+                        objectFit: user?.prof_img === '' ? 'contain' : 'cover',
+                        objectPosition: 'center top',
+                      }} />
                   </div>
                   <div className="card-body text-center">
                     <h3 className='fs-14'>{user?.name}</h3>
@@ -130,16 +130,16 @@ const SundaySchool = () => {
           {
             mgocsmData.map((user, id)=>(
               <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                <div className="card" style={{minHeight:'332px'}}>
+                <div className="card">
                   <div className="image-wrapper">
                     <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
-                      transition: 'filter 0.6s ease',
-                      width: user?.prof_img == '' ? '' : '100%',
-                      height: user?.prof_img == '' ? '' : '100%',
-                      display: 'block',
-                      objectFit: 'cover',
-                      objectPosition: 'center 20%'
-                    }} />
+                        transition: 'filter 0.6s ease',
+                        display: 'block',
+                        width: user?.prof_img === '' ? '40%' : '100%',
+                        height: user?.prof_img === '' ? '40%' : '100%',
+                        objectFit: user?.prof_img === '' ? 'contain' : 'cover',
+                        objectPosition: 'center top',
+                      }} />
                   </div>
                   <div className="card-body text-center">
                     <h3 className='fs-14'>{user?.name}</h3>

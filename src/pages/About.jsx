@@ -231,11 +231,11 @@ const About = () => {
                     <div className="image-wrapper">
                       <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
                         transition: 'filter 0.6s ease',
-                        width: user?.prof_img == '' ? '' : '100%',
-                        height: user?.prof_img == '' ? '' : '100%',
                         display: 'block',
-                        objectFit: 'cover',
-                        objectPosition: 'center 20%'
+                        width: user?.prof_img === '' ? '40%' : '100%',
+                        height: user?.prof_img === '' ? '40%' : '100%',
+                        objectFit: user?.prof_img === '' ? 'contain' : 'cover',
+                        objectPosition: 'center top',
                       }} />
                     </div>
                     <div className="card-body text-center">
@@ -255,15 +255,15 @@ const About = () => {
             {
               committee.map((user, id)=>(
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                  <div className="card" style={{minHeight:'332px'}}>
+                  <div className="card" >
                     <div className="image-wrapper">
                       <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
                         transition: 'filter 0.6s ease',
-                        width: user?.prof_img == '' ? '' : '100%',
-                        height: user?.prof_img == '' ? '' : '100%',
                         display: 'block',
-                        objectFit: 'cover',
-                        objectPosition: 'center 20%'
+                        width: user?.prof_img === '' ? '40%' : '100%',
+                        height: user?.prof_img === '' ? '40%' : '100%',
+                        objectFit: user?.prof_img === '' ? 'contain' : 'cover',
+                        objectPosition: 'center top',
                       }} />
                     </div>
                     <div className="card-body text-center">
@@ -283,15 +283,15 @@ const About = () => {
             {
               auditors.map((user, id)=>(
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                  <div className="card" style={{minHeight:'332px'}}>
+                  <div className="card">
                     <div className="image-wrapper">
                       <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
                         transition: 'filter 0.6s ease',
-                        width: user?.prof_img == '' ? '' : '100%',
-                        height: user?.prof_img == '' ? '' : '100%',
                         display: 'block',
-                        objectFit: 'cover',
-                        objectPosition: 'center 20%'
+                        width: user?.prof_img === '' ? '40%' : '100%',
+                        height: user?.prof_img === '' ? '40%' : '100%',
+                        objectFit: user?.prof_img === '' ? 'contain' : 'cover',
+                        objectPosition: 'center top',
                       }} />
                     </div>
                     <div className="card-body text-center">
@@ -309,9 +309,16 @@ const About = () => {
           <hr />
           <div className="row gap-3 mb-3 justify-content-center">
             <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-              <div className="card" style={{minHeight:'332px'}}>
+              <div className="card">
                 <div className="image-wrapper">
-                  <img src={no_image} className="card-img-top" />
+                  <img src={no_image} className="card-img-top" loading='lazy' style={{ 
+                    transition: 'filter 0.6s ease',
+                    display: 'block',
+                    width: '40%',
+                    height: '40%',
+                    objectFit: 'contain',
+                    objectPosition: 'center top',
+                  }} />
                 </div>
                 <div className="card-body text-center">
                   <h3 className='fs-14'>Sri. Babu Pooyapallil</h3>
