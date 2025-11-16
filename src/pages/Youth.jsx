@@ -1,4 +1,5 @@
-import { ancy_satheesh, no_image, roby } from '@/assets/asset';
+import { ancy_satheesh, roby } from '@/assets/asset';
+import MemberCard from '@/components/shared/MemberCard';
 import React from 'react'
 
 const Youth = () => {
@@ -91,58 +92,12 @@ const Youth = () => {
           <h3 className="fs-16">OCYM administration</h3>
           <hr />
           <div className="row gap-3 mb-3 justify-content-center">
-            {
-              ocymData.map((user, id)=>(
-                <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                  <div className="card" style={{minHeight:'332px'}}>
-                    <div className="image-wrapper">
-                      <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
-                        transition: 'filter 0.6s ease',
-                        display: 'block',
-                        width: user?.prof_img === '' ? '40%' : '100%',
-                        height: user?.prof_img === '' ? '40%' : '100%',
-                        objectFit: user?.prof_img === '' ? 'contain' : 'cover',
-                        objectPosition: 'center top',
-                      }} />
-                    </div>
-                    <div className="card-body text-center">
-                      <h3 className='fs-14'>{user?.name}</h3>
-                      <p className='fs-14 mb-0'>{user?.desig}</p>
-                      <p className='fs-14 mb-0'>{user?.number}</p>
-                      <p className='fs-14 mb-0'>{user?.address}</p>
-                    </div>
-                  </div>
-                </div>
-              ))
-            }
+            {ocymData.map((user) => <MemberCard user={user} key={user.name} />)}
           </div>
           <h3 className="fs-14 mt-2">OCYM executive committee members</h3>
           <hr />
           <div className="row gap-3 mb-3 justify-content-center">
-            {
-              ocymExecutive.map((user, id)=>(
-              <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                  <div className="card" style={{minHeight:'332px'}}>
-                    <div className="image-wrapper">
-                      <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
-                        transition: 'filter 0.6s ease',
-                        display: 'block',
-                        width: user?.prof_img === '' ? '40%' : '100%',
-                        height: user?.prof_img === '' ? '40%' : '100%',
-                        objectFit: user?.prof_img === '' ? 'contain' : 'cover',
-                        objectPosition: 'center top',
-                      }} />
-                    </div>
-                    <div className="card-body text-center">
-                      <h3 className='fs-14'>{user?.name}</h3>
-                      <p className='fs-14 mb-0'>{user?.desig}</p>
-                      <p className='fs-14 mb-0'>{user?.number}</p>
-                      <p className='fs-14 mb-0'>{user?.address}</p>
-                    </div>
-                  </div>
-                </div>
-              ))
-            }
+            {ocymExecutive.map((user) => <MemberCard user={user} key={user.name} />)}
           </div>
         </div>
     </div>

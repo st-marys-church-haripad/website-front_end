@@ -49,11 +49,11 @@ export const menuItems = [
     //   url : '/news-events',
     //   element : <News />
     // },
-    {
-      title : 'Live Streams',
-      url : '/live-streams',
-      element : Live
-    },
+    // {
+    //   title : 'Live Streams',
+    //   url : '/live-streams',
+    //   element : Live
+    // },
     {
       title : `എട്ടുനോമ്പ് ${date.getFullYear()}`,
       url : `/എട്ടുനോമ്പ്-${date.getFullYear()}`,

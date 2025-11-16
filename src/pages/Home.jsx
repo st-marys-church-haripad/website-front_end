@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 const Home = () => {
   const navigate = useNavigate();
   const date = new Date().getDate();
+  const verseIndex = (date - 1) % bibleVerses.length; // Prevents out-of-bounds
   const handleButtonClick = () => {
     navigate('/about');
   };
@@ -12,10 +13,10 @@ const Home = () => {
       <div className="container">
         <figure className="text-center mt-3">
           <blockquote className="blockquote fw-600">
-            <p className="fs-14">" {bibleVerses[date-1]?.verses} "</p>
+            <p className="fs-14">" {bibleVerses[verseIndex]?.verses} "</p>
           </blockquote>
           <figcaption className="blockquote-footer">
-            <cite title="Source Title">{bibleVerses[date-1]?.from}</cite>
+            <cite title="Source Title">{bibleVerses[verseIndex]?.from}</cite>
           </figcaption>
         </figure>
         <div className="vstack">

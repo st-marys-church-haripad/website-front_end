@@ -1,8 +1,9 @@
-import { annie_varghese, c_t_samuel, gerogekutty_paadi, idicula, jacob_alex, molly_samuel, no_image, santhama_thomas, selin, sunny_nelpurayil, sunny_vazhayil, yohannan } from '@/assets/asset';
-
+import { annie_varghese, c_t_samuel, gerogekutty_paadi, idicula, jacob_alex, molly_samuel, santhama_thomas, selin, sunny_nelpurayil, sunny_vazhayil, yohannan } from '@/assets/asset';
+import MemberCard from '@/components/shared/MemberCard';
 import React from 'react';
 
 const About = () => {
+
   const scheduleData = [
     {
       day: 'Sunday',
@@ -136,6 +137,7 @@ const About = () => {
       "prof_img": sunny_nelpurayil
     }
   ]
+
   return (
     <>
       <div className='container'>
@@ -224,114 +226,31 @@ const About = () => {
           <h3 className='fs-16'>Parish administration</h3>
           <hr />
           <div className="row gap-3 mb-3 justify-content-center">
-            {
-              parishAdministration.map((user, id)=>(
-                <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                  <div className="card" style={{minHeight:'332px'}}>
-                    <div className="image-wrapper">
-                      <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
-                        transition: 'filter 0.6s ease',
-                        display: 'block',
-                        width: user?.prof_img === '' ? '40%' : '100%',
-                        height: user?.prof_img === '' ? '40%' : '100%',
-                        objectFit: user?.prof_img === '' ? 'contain' : 'cover',
-                        objectPosition: 'center top',
-                      }} />
-                    </div>
-                    <div className="card-body text-center">
-                      <h3 className='fs-14'>{user?.name}</h3>
-                      <p className='fs-14 mb-0'>{user?.desig}</p>
-                      <p className='fs-14 mb-0'>{user?.number}</p>
-                      <p className='fs-14 mb-0'>{user?.address}</p>
-                    </div>
-                  </div>
-                </div>
-              ))
-            }
+            {parishAdministration.map((user, id) => (
+              <MemberCard user={user} key={user.name || id} />
+            ))}
           </div>
           <h3 className='fs-14 mt-2'>Committee</h3>
           <hr />
           <div className="row gap-3 mb-3 justify-content-center">
-            {
-              committee.map((user, id)=>(
-                <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                  <div className="card" >
-                    <div className="image-wrapper">
-                      <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
-                        transition: 'filter 0.6s ease',
-                        display: 'block',
-                        width: user?.prof_img === '' ? '40%' : '100%',
-                        height: user?.prof_img === '' ? '40%' : '100%',
-                        objectFit: user?.prof_img === '' ? 'contain' : 'cover',
-                        objectPosition: 'center top',
-                      }} />
-                    </div>
-                    <div className="card-body text-center">
-                      <h3 className='fs-14'>{user?.name}</h3>
-                      <p className='fs-14 mb-0'>{user?.desig}</p>
-                      <p className='fs-14 mb-0'>{user?.number}</p>
-                      <p className='fs-14 mb-0'>{user?.address}</p>
-                    </div>
-                  </div>
-                </div>
-              ))
-            }
+            {committee.map((user, id) => (
+              <MemberCard user={user} key={user.name || id} />
+            ))}
           </div>
           <h3 className='fs-14 mt-2'>Auditors</h3>
           <hr />
           <div className="row gap-3 mb-3 justify-content-center">
-            {
-              auditors.map((user, id)=>(
-                <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={id}>
-                  <div className="card">
-                    <div className="image-wrapper">
-                      <img src={user?.prof_img == '' ? no_image : user?.prof_img} className="card-img-top" loading='lazy' style={{ 
-                        transition: 'filter 0.6s ease',
-                        display: 'block',
-                        width: user?.prof_img === '' ? '40%' : '100%',
-                        height: user?.prof_img === '' ? '40%' : '100%',
-                        objectFit: user?.prof_img === '' ? 'contain' : 'cover',
-                        objectPosition: 'center top',
-                      }} />
-                    </div>
-                    <div className="card-body text-center">
-                      <h3 className='fs-14'>{user?.name}</h3>
-                      <p className='fs-14 mb-0'>{user?.desig}</p>
-                      <p className='fs-14 mb-0'>{user?.number}</p>
-                      <p className='fs-14 mb-0'>{user?.address}</p>
-                    </div>
-                  </div>
-                </div>
-              ))
-            }
+            {auditors.map((user, id) => (
+              <MemberCard user={user} key={user.name || id} />
+            ))}
           </div>
           <h3 className="fs-14 mt-2">Perunnal convener</h3>
           <hr />
           <div className="row gap-3 mb-3 justify-content-center">
-            <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-              <div className="card">
-                <div className="image-wrapper">
-                  <img src={no_image} className="card-img-top" loading='lazy' style={{ 
-                    transition: 'filter 0.6s ease',
-                    display: 'block',
-                    width: '40%',
-                    height: '40%',
-                    objectFit: 'contain',
-                    objectPosition: 'center top',
-                  }} />
-                </div>
-                <div className="card-body text-center">
-                  <h3 className='fs-14'>Sri. Babu Pooyapallil</h3>
-                  <p className='fs-14 mb-0'></p>
-                  <p className='fs-14 mb-0'></p>
-                  <p className='fs-14 mb-0'></p>
-                </div>
-              </div>
-            </div>
+            <MemberCard user={{ name: "Sri. Regi Easso", prof_img: "", desig: "", number: "", address: "" }} />
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
     </>
   )
 }

@@ -44,7 +44,7 @@ img {
 .btn {
     font-size: 1rem !important;
     border: 1px solid var(--common-color);
-    padding: 10px 50px;
+    padding: 10px 20px;
 }
 
 .btn:hover {
@@ -58,6 +58,11 @@ img {
 
 .btn-transparent {
     background-color: transparent;
+}
+
+.btn-borderless {
+    border: none !important;
+    padding: 8px 0 !important;
 }
 
 /* Navbar */
@@ -115,5 +120,15 @@ img {
 @media screen and (max-width: 600px) {
     .btn {
         padding: 10px !important;
+        font-size: 0.8rem !important;
+    }
+
+    .btn-borderless {
+        border: none !important;
+        padding: 8px 0 !important;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
     }
 }
