@@ -42,11 +42,6 @@
     flex-direction: column;
 }
 
-.notFound {
-    font-size: 1.9rem;
-    font-weight: 600;
-}
-
 /* Banner Video */
 .video-img-container {
     position: relative;

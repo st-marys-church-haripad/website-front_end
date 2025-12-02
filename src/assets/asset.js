@@ -26,6 +26,7 @@ import ancy_satheesh from '@/assets/members_images/ancy_satheesh.webp'
 import poster_main_1 from '@/assets/ettuNomb/poster_main_1.webp'
 import poster_main_2 from '@/assets/ettuNomb/poster_main_2.webp'
 import kodimarem_next from '@/assets/ettuNomb/kodimarem_next.webp'
+import jubilee from '@/assets/images/rajathajubilee.png'
 
 export {
     logo,
@@ -55,5 +56,6 @@ export {
     ancy_satheesh,
     poster_main_1,
     poster_main_2,
-    kodimarem_next
+    kodimarem_next,
+    jubilee
 }

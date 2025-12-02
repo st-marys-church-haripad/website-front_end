@@ -3,10 +3,12 @@ import { useLocation } from 'react-router-dom';
 import '@/styles/App.css'
 import LoaderComponent from './components/shared/LoaderComponent'
 import Routers from './routes/Routers';
+import PopupCelebrations from './components/shared/PopupCelebrations';
 
 function App() {
   const [loader, setLoader] = useState(true)
   const location = useLocation();
+  const [showCelebration, setShowCelebration] = useState(false);
 
   useEffect(() => {
     setLoader(true);
@@ -18,9 +20,18 @@ function App() {
     };
   }, [location]);
 
+  useEffect(() => {
+     const alreadyShown = sessionStorage.getItem("celebrationShown");
+    if (!alreadyShown) {
+      sessionStorage.setItem("celebrationShown", "true");
+      setShowCelebration(true);
+    }
+  }, []);
+
   return (
     <>
-    { loader ? <LoaderComponent /> :  <Routers /> }
+      {showCelebration && <PopupCelebrations />}
+      { loader ? <LoaderComponent /> :  <Routers /> }
     </>
   );
 }
