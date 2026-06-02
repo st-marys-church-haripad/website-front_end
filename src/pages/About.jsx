@@ -28,10 +28,10 @@ const About = () => {
   ];
   const parishAdministration = [
     {
-      "name"    : 'Rev. Fr. K. P. Varghese',
+      "name"    : 'Rev. Fr. Denniz P Samuel',
       "desig"   : 'Vicar',
       "address" : '',
-      "number"  : '+91 9447719819',
+      "number"  : '+91 9605102044',
       "prof_img": ''
     },
     {
@@ -50,13 +50,13 @@ const About = () => {
     }
   ]
   const committee = [
-    {
-      "name"    : 'Sri. Yohannan Thomas',
-      "desig"   : '',
-      "address" : 'Bethel',
-      "number"  : '',
-      "prof_img": yohannan
-    },
+    // {
+    //   "name"    : 'Sri. Yohannan Thomas',
+    //   "desig"   : '',
+    //   "address" : 'Bethel',
+    //   "number"  : '',
+    //   "prof_img": yohannan
+    // },
     {
       "name"    : 'Sri. C. T. Samuel',
       "desig"   : '',
@@ -65,12 +65,19 @@ const About = () => {
       "prof_img": c_t_samuel
     },
     {
-      "name"    : 'Sri. Philp Mathew',
+      "name"    : 'Sri. Shabu Joseph',
       "desig"   : '',
-      "address" : 'Vaazhayil',
+      "address" : 'Chanaamcheriyil',
       "number"  : '',
-      "prof_img": sunny_vazhayil
+      "prof_img": ''
     },
+    // {
+    //   "name"    : 'Sri. Philp Mathew',
+    //   "desig"   : '',
+    //   "address" : 'Vaazhayil',
+    //   "number"  : '',
+    //   "prof_img": sunny_vazhayil
+    // },
     {
       "name"    : 'Sri. Georgekutty',
       "desig"   : '',
@@ -86,18 +93,53 @@ const About = () => {
       "prof_img": idicula
     },
     {
-      "name"    : 'Sri. Shiju Mathai',
+      "name"    : 'Sri. S Rajan',
       "desig"   : '',
-      "address" : 'Kadavil',
+      "address" : 'Cheriyilethu Thekkathil',
+      "number"  : '',
+      "prof_img": ''
+    },
+     {
+      "name"    : 'Sri. B Babu',
+      "desig"   : '',
+      "address" : 'Pooyapallil Akhil Villa',
       "number"  : '',
       "prof_img": ''
     },
     {
-      "name"    : 'Smt. Molly Samuel',
+      "name"    : 'Sri. John K Babu',
       "desig"   : '',
-      "address" : 'Vaaluzhuthil new villa',
+      "address" : 'Anugraha',
       "number"  : '',
-      "prof_img": molly_samuel
+      "prof_img": ''
+    },
+    // {
+    //   "name"    : 'Sri. Shiju Mathai',
+    //   "desig"   : '',
+    //   "address" : 'Kadavil',
+    //   "number"  : '',
+    //   "prof_img": ''
+    // },
+    // {
+    //   "name"    : 'Smt. Molly Samuel',
+    //   "desig"   : '',
+    //   "address" : 'Vaaluzhuthil new villa',
+    //   "number"  : '',
+    //   "prof_img": molly_samuel
+    // },
+    {
+      "name"    : 'Sri. Ponnamma Joy',
+      "desig"   : '',
+      "address" : 'Vattapallitharayil',
+      "number"  : '',
+      "prof_img": ''
+    },
+    {
+      "name"    : 'Sri. N K Annamma',
+      "desig"   : '',
+      "address" : 'Nelpurayil',
+      "number"  : '',
+      "prof_img": ''
     },
     {
       "name"    : 'Smt. Selin Varghese',
@@ -106,28 +148,28 @@ const About = () => {
       "number"  : '',
       'prof_img': selin
     },
-    {
-      "name"    : 'Smt. Annie Varghese',
-      "desig"   : '',
-      "address" : 'Alummootil padeetathil',
-      "number"  : '',
-      "prof_img": annie_varghese
-    },
-    {
-      "name"    : 'Smt. Shanthamma Thomas',
-      "desig"   : '',
-      "address" : 'Manaveli madem',
-      "number"  : '',
-      "prof_img": santhama_thomas
-    },
+    // {
+    //   "name"    : 'Smt. Annie Varghese',
+    //   "desig"   : '',
+    //   "address" : 'Alummootil padeetathil',
+    //   "number"  : '',
+    //   "prof_img": annie_varghese
+    // },
+    // {
+    //   "name"    : 'Smt. Shanthamma Thomas',
+    //   "desig"   : '',
+    //   "address" : 'Manaveli madem',
+    //   "number"  : '',
+    //   "prof_img": santhama_thomas
+    // },
   ]
   const auditors = [
     {
-      "name"    : 'Sri. Jacob Alex',
+      "name"    : 'Sri. K Kuttan',
       "desig"   : '',
-      "address" : 'Naduvilethu',
+      "address" : 'Nelpurakizhakkathil',
       "number"  : '',
-      "prof_img": jacob_alex
+      "prof_img": ''
     },
     {
       "name"    : 'Sri. Sunny Abraham',

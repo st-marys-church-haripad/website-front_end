@@ -2,6 +2,7 @@ import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import EttuNomb from "@/pages/EttuNomb";
 import Home from "@/pages/Home";
+import Jubilee from "@/pages/Jubilee";
 import Live from "@/pages/Live";
 import Samajam from "@/pages/Samajam";
 import SundaySchool from "@/pages/SundaySchool";
@@ -54,6 +55,11 @@ export const menuItems = [
     //   url : '/live-streams',
     //   element : Live
     // },
+    {
+      title : '125 Years Celebrations',
+      url : '/125-years-celebrations',
+      element : Jubilee
+    },
     {
       title : `എട്ടുനോമ്പ് ${date.getFullYear()}`,
       url : `/എട്ടുനോമ്പ്-${date.getFullYear()}`,

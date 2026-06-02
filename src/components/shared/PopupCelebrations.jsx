@@ -3,56 +3,82 @@ import React, { useEffect, useState } from 'react'
 import Confetti from 'react-confetti'
 
 const PopupCelebrations = () => {
-  const [size, setSize] = useState({ width: 0, height: 0 });
-  const [visible, setVisible] = useState(true);
+  const [size, setSize] = useState({ width: 0, height: 0 })
+  const [visible, setVisible] = useState(true)
+
   useEffect(() => {
     const updateSize = () => {
       if (typeof window !== 'undefined') {
         setSize({ width: window.innerWidth, height: window.innerHeight })
       }
     }
+
+    const handleEscape = (event) => {
+      if (event.key === 'Escape') setVisible(false)
+    }
+
     updateSize()
     window.addEventListener('resize', updateSize)
-    return () => window.removeEventListener('resize', updateSize)
+    window.addEventListener('keydown', handleEscape)
+
+    return () => {
+      window.removeEventListener('resize', updateSize)
+      window.removeEventListener('keydown', handleEscape)
+    }
   }, [])
 
-  if (!size.width || !size.height) return null
-  
+  if (!visible || !size.width || !size.height) return null
+
   return (
-    <>
-        <div
-            className={`modal fade ${visible ? 'show d-block' : 'd-none'}`}
-            style={{ display: 'block', backgroundColor: 'rgba(0,0,0,0.5)' }}
-            aria-modal="true"
-            role="dialog"
+    <div
+      className="celebration-overlay"
+      aria-modal="true"
+      role="dialog"
+      onClick={() => setVisible(false)}
+    >
+      <Confetti
+        width={size.width}
+        height={size.height}
+        numberOfPieces={500}
+        tweenDuration={6000}
+        recycle={false}
+      />
+
+      <div
+        className="celebration-modal"
+        onClick={(event) => event.stopPropagation()}
+      >
+        <button
+          type="button"
+          className="btn-close celebration-close"
+          aria-label="Close celebration popup"
+          onClick={() => setVisible(false)}
+        />
+
+        <p className="celebration-kicker mb-1">A Blessed Milestone</p>
+        <h2 className="celebration-title mb-2">125 Years of Grace</h2>
+
+        <img
+          src={jubilee}
+          className="celebration-logo"
+          loading="lazy"
+          alt="125 Years Celebrations"
+        />
+
+        <p className="celebration-message mb-3">
+          St.Mary&apos;s Church joyfully celebrates a legacy of faith, service,
+          and unity.
+        </p>
+
+        {/* <button
+          type="button"
+          className="btn celebration-dismiss-btn"
+          onClick={() => setVisible(false)}
         >
-            <Confetti width={size.width} height={size.height} numberOfPieces={500} tweenDuration={6000} recycle={false} />
-            <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
-                <div className="modal-body">
-                    <button type="button" className="btn-close" onClick={() => setVisible(false)} />
-                    <div className="d-flex justify-content-center align-items-center flex-column" style={{ minHeight: '200px' }}>
-                        <img
-                            src={jubilee}
-                            className="img-fluid"
-                            loading='lazy'
-                            alt="125 Years Celebrations"
-                            style={{
-                            transition: 'filter 0.6s ease',
-                            display: 'block',
-                            width: '20%',
-                            height: '20%',
-                            objectFit: 'cover',
-                            marginBottom: '10px',
-                            }}
-                        />
-                       <p className="fw-600 text-center"><i>125 Years of St.Mary's Church Celebrations!</i></p>
-                    </div>                 
-                </div>
-            </div>
-            </div>
-        </div>
-    </>
+          Join The Celebration
+        </button> */}
+      </div>
+    </div>
   )
 }
 
