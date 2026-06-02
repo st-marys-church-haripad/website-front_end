@@ -41,12 +41,12 @@ const Contact = () => {
               ഹരിപ്പാട് ആരാഴിപ്പളളി (Facebook) <i className="fa-solid fa-arrow-up-right-from-square"></i>
             </a>  
           </div>
-          <div className="instagram">
+          {/* <div className="instagram">
             <i className="fa-brands fa-instagram fs-14" aria-label="Instagram" style={{'margin-right': '5px'}}></i>
             <a href="https://www.instagram.com/ocym_arazhi_pally/" className='text-success' target='_blank' rel="noopener noreferrer">
               ഹരിപ്പാട് ആരാഴിപ്പളളി (Instagram) <i className="fa-solid fa-arrow-up-right-from-square"></i>
             </a>  
-          </div>
+          </div> */}
           <div className="email">
             <i className="fa-regular fa-envelope fs-14" aria-label="Email" style={{'margin-right': '5px'}}></i>
             <a href="mailto:arazhipalliharipad@gmail.com" className='text-success'>

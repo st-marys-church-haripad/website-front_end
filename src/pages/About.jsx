@@ -167,7 +167,7 @@ const About = () => {
     {
       "name"    : 'Sri. K Kuttan',
       "desig"   : '',
-      "address" : 'Nelpurakizhakkathil',
+      "address" : 'Thekkuvadakkethu',
       "number"  : '',
       "prof_img": ''
     },
@@ -289,7 +289,7 @@ const About = () => {
           <h3 className="fs-14 mt-2">Perunnal convener</h3>
           <hr />
           <div className="row gap-3 mb-3 justify-content-center">
-            <MemberCard user={{ name: "Sri. Regi Easso", prof_img: "", desig: "", number: "", address: "Ambakkattu Vadakkathil" }} />
+            <MemberCard user={{ name: "Sri. Regi Easso", prof_img: "", desig: "", number: "+91 9497395610", address: "Ambakkattu Vadakkathil" }} />
           </div>
         </div>
       </div>
