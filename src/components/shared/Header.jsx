@@ -77,9 +77,9 @@ const Header = () => {
                   );
                 }
               })}
-              <li className="d-block d-md-none">
+              {/* <li className="d-block d-md-none">
                 <button type="button" className="btn btn-borderless" onClick={handleButtonClick}>Donations</button>
-              </li>
+              </li> */}
             </ul>
             </div>
           </div>

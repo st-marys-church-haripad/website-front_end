@@ -4,7 +4,6 @@ import bgVideo from '@/assets/videos/home_video.mp4'
 import { bibleVerses } from "./doc/bibleVerses"
 import bgImg from '@/assets/images/home_img.webp'
 import no_image from '@/assets/images/noUser.png'
-import notice from '@/assets/ettuNomb/notice.webp'
 import amal from '@/assets/members_images/amal.webp'
 import annie_varghese from '@/assets/members_images/annie_varghese.webp'
 import c_t_samuel from '@/assets/members_images/c_t_samuel.webp'
@@ -23,10 +22,9 @@ import roby from '@/assets/members_images/roby.webp'
 import eve_anna from '@/assets/members_images/eve_anna.webp'
 import suja_paadiparambi from '@/assets/members_images/suja_paadiparambi.webp'
 import ancy_satheesh from '@/assets/members_images/ancy_satheesh.webp'
-import poster_main_1 from '@/assets/ettuNomb/poster_main_1.webp'
-import poster_main_2 from '@/assets/ettuNomb/poster_main_2.webp'
-import kodimarem_next from '@/assets/ettuNomb/kodimarem_next.webp'
 import jubilee from '@/assets/images/rajathajubilee.png'
+import notice1 from '@/assets/ettuNomb/Notice_1.webp'
+import notice2 from '@/assets/ettuNomb/Notice_2.webp'
 
 export {
     logo,
@@ -35,7 +33,6 @@ export {
     bibleVerses,
     bgImg,
     no_image,
-    notice,
     amal,
     annie_varghese,
     c_t_samuel,
@@ -54,8 +51,7 @@ export {
     eve_anna,
     suja_paadiparambi,
     ancy_satheesh,
-    poster_main_1,
-    poster_main_2,
-    kodimarem_next,
-    jubilee
+    jubilee,
+    notice1,
+    notice2
 }

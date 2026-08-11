@@ -55,11 +55,11 @@ export const menuItems = [
     //   url : '/live-streams',
     //   element : Live
     // },
-    {
-      title : '125 Years Celebrations',
-      url : '/125-years-celebrations',
-      element : Jubilee
-    },
+    // {
+    //   title : '125 Years Celebrations',
+    //   url : '/125-years-celebrations',
+    //   element : Jubilee
+    // },
     {
       title : `എട്ടുനോമ്പ് ${date.getFullYear()}`,
       url : `/എട്ടുനോമ്പ്-${date.getFullYear()}`,

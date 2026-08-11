@@ -1,35 +1,18 @@
-import { useState } from "react";
 
-const ImageModal = ({ id, imgSrc, alt }) => {
-  const [imgLoaded, setImgLoaded] = useState(false);
-  return (
-    <div className="modal fade" id={id} tabIndex="-1" aria-labelledby={id + "Label"} aria-hidden="true">
-      <div className="modal-dialog">
-        <div className="modal-content">
-          <div className="modal-header">
-            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div className="modal-body">
-            <img
-              src={imgSrc}
-              className="img-fluid"
-              alt={alt}
-              onLoad={() => setImgLoaded(true)}
-              style={{
-                filter: imgLoaded ? 'blur(0px)' : 'blur(8px)',
-                transition: 'filter 0.6s ease',
-                width: '100%',
-                height: '100%',
-                display: 'block',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+import { notice1, notice2 } from "@/assets/asset";
+
+const notices = [
+  {
+    id: "noticeFirst",
+    title: "Notice 1st Part",
+    image: notice1,
+  },
+  {
+    id: "noticeSecond",
+    title: "Notice 2nd Part",
+    image: notice2,
+  },
+];
 
 const EttuNomb = () => {
   return (
@@ -58,22 +41,68 @@ const EttuNomb = () => {
         }}>
           സെപ്റ്റംബർ 7,8 തീയതികളിൽ ദേവാലയത്തിന്റെ പ്രധാന പെരുന്നാൾ ഭക്തിനിർഭരമായും ആഘോഷപൂർവമായും അനുഷ്ടിക്കപ്പെടുന്നു.
         </p>
-        {/* <div className="vstack mb-3 gap-2">
-          <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#poster">
-            Poster <i className="fa-solid fa-arrow-up-right-from-square"></i>
-          </button>
-          <ImageModal id="poster" imgSrc={notice} alt="Perunnal Poster" label="Poster" />
-          <div className="d-flex gap-2">
-            <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#noticeFirst">
-              Notice 1st part <i className="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-            <ImageModal id="noticeFirst" imgSrc={poster_main_1} alt="Notice 1st part" label="Notice 1st part" />
-            <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#noticeSecond">
-              Notice 2nd part <i className="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-            <ImageModal id="noticeSecond" imgSrc={poster_main_2} alt="Notice 2nd part" label="Notice 2nd part" />
+        <div className="vstack mb-3 gap-2">
+          <div className="d-flex gap-2 flex-wrap">
+            {notices.map((notice) => (
+              <button
+                key={notice.id}
+                type="button"
+                className="btn"
+                style={{
+                  backgroundColor: "#88D44C",
+                  color: "#fff",
+                }}
+                data-bs-toggle="modal"
+                data-bs-target={`#${notice.id}`}
+              >
+                {notice.title}
+                <i className="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+              </button>
+            ))}
           </div>
-        </div> */}
+        </div>
+
+        {/* Notice Modals */}
+        {notices.map((notice) => (
+          <div
+            key={notice.id}
+            className="modal fade"
+            id={notice.id}
+            tabIndex="-1"
+            aria-hidden="true"
+          >
+            <div className="modal-dialog modal-dialog-centered modal-xl">
+              <div className="modal-content">
+
+                <div className="modal-header">
+                  <h5 className="modal-title">
+                    {notice.title}
+                  </h5>
+
+                  <button
+                    type="button"
+                    className="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  />
+                </div>
+
+                <div className="modal-body text-center p-2">
+                  <img
+                    src={notice.image}
+                    alt={notice.title}
+                    className="img-fluid w-100"
+                    // style={{
+                    //   maxHeight: "85vh",
+                    //   objectFit: "cover",
+                    // }}
+                  />
+                </div>
+
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
